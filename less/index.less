@@ -78,7 +78,11 @@ h2 {
 	color: @color;
 	margin-bottom: 1%;
 	.border() ;
-}
+
+	@media (max-width:500px) {
+		width: 30vw;
+	}//ends media
+}//ends h2
 
 h3 {
 	font-size:1.2rem;
@@ -110,6 +114,11 @@ header {
 	justify-content: space-between;
 	border-bottom: 1px solid grey;
 
+	@media (max-width: 500px) {
+		flex-direction:column;
+		text-align: center;
+		}//end media query
+
 	h1 {
 	font-size: 2rem;
 	color: @color;
@@ -119,6 +128,10 @@ header {
 	display:flex;
 	justify-content: space-between;
 	width: 30%;
+
+	@media (max-width: 500px) {
+		flex-direction:column;
+		}//end media query
 	
 	a {
 	text-decoration: none;
@@ -132,14 +145,24 @@ header {
 	flex-direction: column;
 
 .section1 {
-	margin: 5% 15%;
+	margin: 2% 15%;
 	.mixin();
 	justify-content: space-between;
 
+	@media (max-width:500px) {
+		display:flex;
+		flex-direction:column;
+		margin: 0 auto;
+	}//end media
+	
 	.self {
 		height:15vw;
 		width: 25%;
 		border-radius:50%;
+
+		@media (max-width:500px) {
+			height:20vw;
+		}//ends media
 	}//ends self
 	.about {
 		width: 50%;
@@ -151,10 +174,13 @@ header {
 	justify-content: space-between;
 	margin: 5% 15%;
 
+	@media (max-width:500px) {
+	margin: 5% 5%;
+	}//end media
+
 	.employment {
 		width: 50%;
-	}
-
+}//end employment
 }//ends bottom-content
 }//ends body1
 footer {
