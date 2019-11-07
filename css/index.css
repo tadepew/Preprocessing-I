@@ -228,7 +228,14 @@ header nav a {
   }
 }
 .body1 .section1 .about {
-  width: 50%;
+  width: 40%;
+  margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .body1 .section1 .about {
+    width: 90%;
+    margin-right: 0.001%;
+  }
 }
 .body1 .bottom-content {
   display: flex;
@@ -241,7 +248,14 @@ header nav a {
   }
 }
 .body1 .bottom-content .employment {
-  width: 50%;
+  width: 40%;
+  margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .body1 .bottom-content .employment {
+    width: 50%;
+    margin-right: 0.001%;
+  }
 }
 footer {
   text-align: center;
